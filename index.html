@@ -1,20 +1,45 @@
 <html>
   <head><title>Ways To Store Data</title></head>
   <body style="padding: 20px; ">
-    <div id='LSlength'> </div>
-    <br>
-    <div id='SSlength'>  </div>
-    <br><br>
-    <input type="text" name="fname" id='LS'><br>
-    <button type="button" onclick="saveDataLS()">Click Me For Local Storage!</button>
-    <button type="button" onclick="resetDataLS()">Click Me For Resetting Local Storage!</button>
-    <br><br>
-    <input type="text" name="fname" id='SS'><br>
-    <button type="button" onclick="saveDataSS()">Click Me For Session Storage!</button>
-    <button type="button" onclick="resetDataSS()">Click Me For Resetting Session Storage!</button>
 
-  </body>
-  
+    <div id='LSlength'> </div>
+    <br><br>
+
+    Key: <input type="text" name="fname" id='LS_save_key_id'>
+    Value: <input type="text" name="fname" id='LS_save_value_id'>
+    <button type="button" onclick="saveData_LS()">Save(Local Storage)</button><br><br>
+
+    Key: <input type="text" name="fname" id='LS_get_key_id'>
+    <button type="button" onclick="getData_LS()">Get(Local Storage)</button>
+    Value: <font id='LS_get_value_id'> </font> <br><br>
+
+    Key: <input type="text" name="fname" id='LS_del_key_id'>
+    <button type="button" onclick="deleteData_LS()">Delete(Local Storage)</button> <br><br>
+
+    <button type="button" onclick="resetData_LS()">Delete All(Local Storage)</button>
+
+    <br><br> <hr> <br>
+
+    <div id='SSlength'> </div>
+    <br><br>
+
+    Key: <input type="text" name="fname" id='SS_save_key_id'>
+    Value: <input type="text" name="fname" id='SS_save_value_id'>
+    <button type="button" onclick="saveData_SS()">Save(Session Storage)</button><br><br>
+
+    Key: <input type="text" name="fname" id='SS_get_key_id'>
+    <button type="button" onclick="getData_SS()">Get(Session Storage)</button>
+    Value: <font id='SS_get_value_id'> </font> <br><br>
+
+    Key: <input type="text" name="fname" id='SS_del_key_id'>
+    <button type="button" onclick="deleteData_SS()">Delete(Session Storage)</button> <br><br>
+
+    <button type="button" onclick="resetData_SS()">Delete All(Session Storage)</button>
+
+    <br><br> <hr> <br>
+
+</body>
+
   <script src="storage.js"> </script>
 
 </html>
